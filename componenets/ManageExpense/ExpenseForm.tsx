@@ -28,7 +28,7 @@ const ExpenseForm = ({
 
   const [inputValues, setInputValues] = useState({
     amount: defaultValues ? defaultValues.amount.toString() : '',
-    date: defaultValues ? defaultValues.date.toISOString().slice(0, 10) : '',
+    date: defaultValues ? defaultValues.date.toISOString().slice(0, 10) : (new Date(Date.now())).toISOString().split('T')[0],
     description: defaultValues ? defaultValues.description : '',
   })
 

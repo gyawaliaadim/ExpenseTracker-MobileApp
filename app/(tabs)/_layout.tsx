@@ -1,4 +1,3 @@
-import "@/app/global.css";
 import MainView from "@/componenets/MainView";
 import Colors from '@/constants/Colors';
 import Ionicons from '@expo/vector-icons/Ionicons';

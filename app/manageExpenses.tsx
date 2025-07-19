@@ -1,4 +1,3 @@
-import '@/componenets/ManageExpense/ExpenseForm';
 import ExpenseForm from '@/componenets/ManageExpense/ExpenseForm';
 import Colors from '@/constants/Colors';
 import { ExpensesContext } from '@/store/expenses-context';
@@ -28,6 +27,7 @@ function ManageExpense() {
     if (isEditing) {
       expensesCtx.updateExpense(editedExpenseId, expenseData);
     } else {
+      // storeExpense(expenseData);  
       expensesCtx.addExpense(expenseData);
     }
     router.back();

@@ -1,4 +1,4 @@
-import "@/app/global.css";
+
 import { ExpensesContextProvider } from "@/store/expenses-context";
 import { Redirect, Stack } from "expo-router";
 import { StatusBar } from "react-native";
@@ -11,11 +11,14 @@ export default function RootLayout() {
 
       <Redirect href="/(tabs)/recent" />
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false
+          
+         }} />
         <Stack.Screen
           name="manageExpenses"
           options={{
             presentation: "modal",
+
           }} />
       </Stack>
 
