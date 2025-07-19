@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# 💸 Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple, clean **Expense Tracker** built with **Expo + React Native**. It helps you add, view, and manage your expenses — locally. No backend needed, just fast and offline.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+- Add new expenses with description, amount, and date  
+- View recent transactions  
+- See your weekly total spending  
+- Delete expenses you regret 😅  
+- Responsive — works on Android and iOS  
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📚 What I Learned
 
-In the output, you'll find options to open the app in a
+- 🧠 **Context API** for global state management across screens  
+- 🧭 **React Navigation** with stack + bottom tabs  
+- 💡 Component-based architecture and reusable UI  
+- 🔥 *(Side quest)* Tried Firebase for storing expenses, but for this use case it was kinda overkill — Context handled it better  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tech Stack
 
-## Get a fresh project
+<table>
+  <thead>
+    <tr>
+      <th>Tech</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expo</td>
+      <td>For easy React Native development</td>
+    </tr>
+    <tr>
+      <td>React Native</td>
+      <td>Core framework</td>
+    </tr>
+    <tr>
+      <td>Context API</td>
+      <td>For local state management</td>
+    </tr>
+    <tr>
+      <td>React Navigation</td>
+      <td>Screen navigation</td>
+    </tr>
+    <tr>
+      <td>TypeScript</td>
+      <td>Strongly typed components</td>
+    </tr>
+  </tbody>
+</table>
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## 🖼️ Screenshots
+
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/9bfead4e-7c13-4f7f-aa87-246c53ac7cc3" />
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/787ed896-5a96-4a45-8ce4-023ea5fb7d7b" />
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/e92482ee-bb5b-4de1-bedc-e3a399e22a35" />
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/21dda143-7107-422b-9395-cbdb3406825c" />
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/72393f4d-f5d2-41db-9835-71e5d6a74a86" />
+<img width="315" height="560" alt="Expense Tracker Screenshot" src="https://github.com/user-attachments/assets/d362db06-f104-452e-83e4-341c28c3a407" />
+
+---
+
+## 🧪 Run It Locally
+
 ```
+git clone https://github.com/gyawaliaadim/ExpenseTracker-MobileApp.git
+cd ExpenseTracker-MobileApp
+npm install
+npx expo start
+```
+Make sure you have Expo Go installed on your phone to run it!
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🧠 Thought Process
+Originally planned to use Firebase for persistent data, but realized that for a local-first app like this, Context API was enough. Firebase added complexity without much benefit for now. Might revisit if I ever want cross-device syncing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤙 Credits
+Made with love, logic, and a few bugs I had to Google my way out of.
+Built by @gyawaliaadim
